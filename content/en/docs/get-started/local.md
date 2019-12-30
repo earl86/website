@@ -69,6 +69,16 @@ export VTDATAROOT=${HOME}/vtdataroot
 export PATH=${VTROOT}/bin:${PATH}
 ```
 
+## Configure the mysql cnf if you install mysql using bin tar
+
+Modify the following three parameters in the path of Vitess extracted-tarball 'config/mycnf/default.cnf'
+
+```
+basedir = /usr/local/mysql
+plugin-dir = /usr/local/mysql/lib/plugin/
+lc-messages-dir=/usr/local/mysql/share/
+```
+
 You are now ready to start your first cluster!
 
 ## Start a Single Keyspace Cluster
