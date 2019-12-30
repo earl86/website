@@ -67,6 +67,9 @@ export VTROOT=/path/to/extracted-tarball
 export VTTOP=$VTROOT
 export VTDATAROOT=${HOME}/vtdataroot
 export PATH=${VTROOT}/bin:${PATH}
+#if install mysql using bin tar,you need modify the following two parameters
+#export VT_MYSQL_BASEDIR=/usr/local/mysql
+#export VT_MYSQL_ROOT=/usr/local/mysql
 ```
 
 You are now ready to start your first cluster!
